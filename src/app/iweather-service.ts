@@ -3,7 +3,6 @@ import { ICurrentWeather } from "./icurrent-weather";
 
 export interface IWeatherService {
    getCurrentWeather(
-    city: string,
-    country: string
+    searchText : string |number,country ?:string
   ): Observable<ICurrentWeather>;
 }
