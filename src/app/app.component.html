@@ -4,9 +4,9 @@
   </mat-toolbar>
   <div>Your city ,your forcast,right now</div>
   <div>
-    <app-city-search> </app-city-search>
+    <app-city-search (searchEvent)="doSearch($event)"> </app-city-search>
   </div>
   <mat-card color="primary">
-    <app-current-weather> </app-current-weather>
+    <app-current-weather [current]="currentWeather"> </app-current-weather>
   </mat-card>
 </div>
